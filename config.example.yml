@@ -1,0 +1,6 @@
+server:
+  remote_port: <REMOTE_SERVER_PORT>
+  ip: <REMOTE_SERVER_IP>
+telegram:
+  bot_token: <YOUR_BOT_TOKEN>
+  sudo_id: <YOUR_TELEGRAM_ID>
