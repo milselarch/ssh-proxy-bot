@@ -113,7 +113,7 @@ class SshProxyBot(object):
             await message.reply_text('SSH PROXY NOT RUNNING')
             return False
 
-        self.process.terminate()
+        self.process.kill()
         self.process = None
         await message.reply_text('ssh proxy terminated')
         return True
