@@ -174,7 +174,7 @@ class SshProxyBot(object):
 
         self.app = ApplicationBuilder().token(api_key).build()
         self.cmd = (
-            f'ssh -R {self.remote_port}:localhost:22 '
+            f'exec ssh -R {self.remote_port}:localhost:22 '
             f'milselarch@{self.server_ip}'
         )
 
